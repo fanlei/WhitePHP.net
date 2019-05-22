@@ -20,7 +20,7 @@ title: "The Little PHPer - 1. Toys"
                 atom
             </td>
             <td>
-                non-array <sup>[<a href="#php-types">1</a>]</sup>
+                non-array <sup><a href="#php-types">[1]</a></sup>
             </td>
         </tr>
         <tr>
@@ -50,10 +50,10 @@ title: "The Little PHPer - 1. Toys"
         </tr>
         <tr>
             <td>
-                list <sup>[<a href="#s-expression">2</a>]</sup>
+                list <sup><a href="#s-expression">[2]</a></sup>
             </td>
             <td>
-                array
+                array <sup><a href="#php-array">[3]</a></sup>
             </td>
         </tr>
         <tr>
@@ -118,7 +118,7 @@ function car($l) {
         </tr>
         <tr>
             <td>
-                cdr <sup><a href="#car-and-cdr">2</a></sup>
+                cdr <sup><a href="#car-and-cdr">[4]</a></sup>
             </td>
             <td><pre lang="php">
 function cdr($l) {
@@ -175,8 +175,9 @@ function is_eq($s1, $s2) {
 </table>
 
 <ol>
-    <li id="#php-types"><a href="//php.net/manual/en/language.types.intro.php" target="_blank">PHP Types</a></li> 
-    <li id="#s-expression"><a href="https://en.wikipedia.org/wiki/S-expression" target="_blank">Car and Cdr</a>?</li> 
-    <li id="#car-and-cdr">Why <a href="https://en.wikipedia.org/wiki/CAR_and_CDR" target="_blank">Car and Cdr</a>?</li> 
+    <li id="#php-types"><a href="https://php.net/manual/en/language.types.intro.php" target="_blank">PHP Types</a>.</li>
+    <li id="#s-expression"><a href="https://en.wikipedia.org/wiki/S-expression" target="_blank">S-expression</a>?</li>
+    <li id="#php-types"><a href="https://www.php.net/manual/en/language.types.array.php" target="_blank">PHP Array</a>, <q>treated as an array</q>.</li>
+    <li id="#car-and-cdr">Why <a href="https://en.wikipedia.org/wiki/CAR_and_CDR" target="_blank">Car and Cdr</a>?</li>
 <p></p>
 </ol>
