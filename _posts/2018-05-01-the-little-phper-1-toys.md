@@ -3,6 +3,12 @@ layout: post
 title: "The Little PHPer - 1. Toys"
 ---
 
+<style>
+.wrapper {
+    max-width: 801px;   
+}
+</style>
+
 <table>
     <thead>
         <tr>
@@ -25,27 +31,41 @@ title: "The Little PHPer - 1. Toys"
         </tr>
         <tr>
             <td>
-                xyz <br />
-                (quote xyz)
+                <code>
+                atom
+                </code><br />
+                <code>
+                (quote atom)
+                </code>
             </td>
             <td>
-                'xyz'
-            </td>
-        </tr>
-        <tr>
-            <td>
-                1492
-            </td>
-            <td>
-                1492
+                <code>
+                'atom'
+                </code>
             </td>
         </tr>
         <tr>
             <td>
+                <code>
+                1492
+                </code>
+            </td>
+            <td>
+                <code>
+                1492
+                </code>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <code>
                 *abc$
+                </code>
             </td>
             <td>
+                <code>
                 '*abc$'
+                </code>
             </td>
         </tr>
         <tr>
@@ -58,118 +78,172 @@ title: "The Little PHPer - 1. Toys"
         </tr>
         <tr>
             <td>
-                (atom) <br />
+                <code>
+                (atom)
+                </code><br />
+                <code>
                 (quote (atom))
+                </code>
             </td>
             <td>
+                <code>
                 ['atom']
+                </code>
             </td>
         </tr>
         <tr>
             <td>
+                <code>
                 (atom turkey or)
+                </code>
             </td>
             <td>
+                <code>
                 ['atom', 'turkey', 'or']
+                </code>
             </td>
         </tr>
         <tr>
             <td>
+                <code>
                 ((atom, turkey) or)
+                </code>
             </td>
             <td>
+                <code>
                 [['atom', 'turkey'], 'or']
+                </code>
             </td>
         </tr>
         <tr>
             <td>
+                <code>
                 (((how) are) ((you) (doing so)) far)
+                </code>
             </td>
             <td>
+                <code>
                 [[['how'], 'are'] [['you'], ['doing', 'so']], 'far']
+                </code>
             </td>
         </tr>
         <tr>
             <td>
+                <code>
                 ()
+                </code>
             </td>
             <td>
+                <code>
                 []
+                </code>
             </td>
         </tr>
         <tr>
             <td>
+                <code>
                 (() () ())
+                </code>
             </td>
             <td>
+                <code>
                 [[], [], []]
+                </code>
             </td>
         </tr>
         <tr>
             <td>
+                <code><strong>
                 car
+                </strong></code>
             </td>
-            <td><pre lang="php">
-function car($l) { 
-    return 
+            <td>
+            {%- highlight php -%}
+function car
+($l)
+{return 
     $l[0];
 }
-            </pre></td>
+            {%- endhighlight -%}
+            </td>
         </tr>
         <tr>
             <td>
-                cdr <sup><a href="#car-and-cdr">[4]</a></sup>
+                <code><strong>
+                cdr</strong></code> 
+                <sup><a href="#car-and-cdr">[4]</a></sup>
             </td>
-            <td><pre lang="php">
-function cdr($l) {
-    return 
+            <td>
+            {%- highlight php -%}
+function cdr
+($l)
+{return 
     array_slice($l, 1);
 }
-            </pre></td>
+            {%- endhighlight -%}
+            </td>
         </tr>
         <tr>
             <td>
+                <code><strong>
                 cons
+                </strong></code>
             </td>
-            <td><pre lang="php">
-function cons($s, $l) {
-    return
+            <td>
+            {%- highlight php -%}
+function cons
+($s, $l)
+{return
     array_merge([$s], $l);
 }
-            </pre></td>
+            {%- endhighlight -%}
+            </td>
         </tr>
         <tr>
             <td>
+                <code><strong>
                 null?
+                </strong></code>
             </td>
-            <td><pre lang="php">
-function is_nulll($l) {
-    return
+            <td>
+            {%- highlight php -%}
+function is_nulll
+($l)
+{return
     [] === $l;
 }
-            </pre></td>
+            {%- endhighlight -%}
+            </td>
         </tr>
         <tr>
             <td>
+                <code><strong>
                 atom?
+                </strong></code>
             </td>
-            <td><pre lang="php">
-function is_atom($s) {
-    return
+            <td>
+            {%- highlight php -%}
+function is_atom
+($s)
+{return
     ! is_array($s);
 }
-            </pre></td>
+            {%- endhighlight -%}
+            </td>
         </tr>
         <tr>
             <td>
-                eq?
+                <code><strong>eq?</strong></code>
             </td>
-            <td><pre lang="php">
-function is_eq($s1, $s2) {
-    return
+            <td>
+            {%- highlight php -%}
+function is_eq
+($s1, $s2)
+{return
     $s1 === $s2;
 }
-            </pre></td>
+            {%- endhighlight -%}
+            </td>
         </tr>
     </tbody>
 </table>
