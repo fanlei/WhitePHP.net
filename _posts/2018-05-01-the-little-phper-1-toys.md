@@ -7,6 +7,10 @@ title: "The Little PHPer - 1. Toys"
 .wrapper {
     max-width: 801px;   
 }
+
+tr td {
+    vertical-align: middle;   
+}
 </style>
 
 <table>
@@ -249,9 +253,9 @@ function is_eq
 </table>
 
 <ol>
-    <li id="#php-types"><a href="https://php.net/manual/en/language.types.intro.php" target="_blank">PHP Types</a>.</li>
-    <li id="#s-expression"><a href="https://en.wikipedia.org/wiki/S-expression" target="_blank">S-expression</a>?</li>
-    <li id="#php-types"><a href="https://www.php.net/manual/en/language.types.array.php" target="_blank">PHP Array</a>, <q>treated as an array</q>.</li>
-    <li id="#car-and-cdr">Why <a href="https://en.wikipedia.org/wiki/CAR_and_CDR" target="_blank">Car and Cdr</a>?</li>
+    <li id="php-types"><a href="https://php.net/manual/en/language.types.intro.php" target="_whitephp-ref">PHP Types</a>.</li>
+    <li id="s-expression"><a href="https://en.wikipedia.org/wiki/S-expression" target="_whitephp-ref">S-expression</a>.</li>
+    <li id="php-types"><a href="https://www.php.net/manual/en/language.types.array.php" target="_whitephp-ref">PHP Array</a>, <q>treated as an array</q>.</li>
+    <li id="car-and-cdr">Why <a href="https://en.wikipedia.org/wiki/CAR_and_CDR" target="_whitephp-ref">Car and Cdr</a>?</li>
 <p></p>
 </ol>

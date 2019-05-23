@@ -3,12 +3,6 @@ layout: post
 title: "The Little PHPer - 2. Do It, Do It Again, and Again, and Again..."
 ---
 
-<style>
-.v-align-bottom {
-    vertical-align: bottom;
-}
-</style>
-
 <table>
     <thead>
         <tr>
@@ -37,9 +31,10 @@ function foo        |       $foo = function
 {return             |       {return
     body;           |           body;
 }                   |       }</pre>
+                <div class="sup-block"><sup><a href="#php-function">[1]</a>,</sup> <sup><a href="#php-lambda">[2]</a></sup></div>
             </td>
         </tr>
-        <tr class="v-align-bottom">
+        <tr>
             <td>
                 <pre>
 (cond 
@@ -49,11 +44,13 @@ function foo        |       $foo = function
   (else en))</pre>
             </td>
             <td>
+            <br />
                 <pre>
 p1 ? e1 :
 p2 ? e2 :
 ...
 en;</pre>
+                <div class="sup-block"><sup><a href="#php-ternary">[3]</a></sup></div>
             </td>
         </tr>
         <tr>
@@ -63,9 +60,7 @@ en;</pre>
                 </code>
             </td>
             <td>
-                <code>
-                    TRUE
-                </code>
+                <code>TRUE</code> <sup><a href="#php-boolean">[4]</a></sup>
             </td>
         </tr>
         <tr>
@@ -87,9 +82,8 @@ en;</pre>
                 </code>
             </td>
             <td>
-                <code>
-                ... or ...
-                </code>
+                <code>... or ...</code> 
+                <sup><a href="#php-logical">[5]</a></sup>
             </td>
         </tr>
         <tr>
@@ -138,3 +132,13 @@ function is_member
         </tr>
     </tbody>
 </table>
+
+<ol>
+    <li id="php-function"><a href="https://www.php.net/manual/en/functions.user-defined.php" target="_whitephp-ref">PHP User-defined functions</a>.</li>
+    <li id="php-lambda"><a href="https://www.php.net/manual/en/functions.anonymous.php" target="_whitephp-ref">PHP Anonymous functions</a>.</li>
+    <li id="php-ternary"><a href="https://www.php.net/manual/en/language.operators.comparison.php#language.operators.comparison.ternary" target="_whitephp-ref">PHP Ternary Operator</a>.</li>
+    <li id="php-boolean"><a href="https://www.php.net/manual/en/language.types.boolean.php" target="_whitephp-ref">PHP Booleans</a>.</li>
+    <li id="php-logical"><a href="https://www.php.net/manual/en/language.operators.logical.php" target="_whitephp-ref">PHP Logical</a>.</li>
+<p></p>
+</ol>
+
