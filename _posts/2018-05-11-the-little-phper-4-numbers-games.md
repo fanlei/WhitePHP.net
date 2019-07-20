@@ -397,4 +397,3 @@ function is_one
         </tr>
     </tbody>
 </table>
-

@@ -3,6 +3,11 @@ layout: post
 title: "The Little PHPer - 2. Do It, Do It Again, and Again, and Again..."
 ---
 
+<style>
+.post-title {
+    font-size: 29px;   
+}
+</style>
 <table>
     <thead>
         <tr>
