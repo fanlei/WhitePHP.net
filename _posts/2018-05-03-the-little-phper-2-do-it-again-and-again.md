@@ -30,7 +30,7 @@ function foo        |       $foo = function
 ($a, $b, $c)        |       ($a, $b, $c) use (&$foo)
 {return             |       {return
     body;           |           body;
-}                   |       }</pre>
+}                   |       };</pre>
                 <div class="sup-block"><sup><a href="#php-function">[1]</a>,</sup> <sup><a href="#php-lambda">[2]</a></sup></div>
             </td>
         </tr>
@@ -46,10 +46,10 @@ function foo        |       $foo = function
             <td>
             <br />
                 <pre>
-p1 ? e1 :
-p2 ? e2 :
-...
-en;</pre>
+p1 ? e1 
+: (p2 ? e2
+  ...
+  : en);</pre>
                 <div class="sup-block"><sup><a href="#php-ternary">[3]</a></sup></div>
             </td>
         </tr>
@@ -94,17 +94,16 @@ en;</pre>
     (cond
       ((null? l) #t)
       ((atom? (car l)) (lat? (cdr l)))
-      (else #f))))
-                </pre>
+      (else #f))))</pre>
             </td>
             <td>
             {%- highlight php -%}
 function is_lat
 ($l)
 {return 
-    is_nulll($l) ? TRUE :
-    is_atom(car($l)) ? is_lat(cdr($l)) :
-    FALSE;
+    is_nulll($l) ? TRUE 
+    : (is_atom(car($l)) ? is_lat(cdr($l))
+      : FALSE);
 }
             {%- endhighlight -%}
             </td>
@@ -124,8 +123,8 @@ function is_lat
 function is_member
 ($a, $lat)
 {return 
-    is_nulll($l) ? FALSE :
-    is_eq($a, car($lat)) or is_member($a, cdr($lat));
+    is_nulll($l) ? FALSE 
+    : is_eq($a, car($lat)) || is_member($a, cdr($lat));
 }
             {%- endhighlight -%}
             </td>
