@@ -8,6 +8,7 @@ title: "The Little PHPer - 5. *Oh My Gawd*:    It's Full of Stars"
     font-size: 35px;   
 }
 </style>
+
 <table>
     <thead>
         <tr>
@@ -15,7 +16,7 @@ title: "The Little PHPer - 5. *Oh My Gawd*:    It's Full of Stars"
                 Scheme
             </th>
             <th>
-                PHP
+                PHP <span class="sc-ref">[<a href="https://github.com/whitephp/the-little-phper/blob/master/src/chapter_5.php" target="_whitephp-ref">Source Code</a>]</span>
             </th>
         </tr>
     </thead>

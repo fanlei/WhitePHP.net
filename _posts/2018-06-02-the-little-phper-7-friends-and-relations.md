@@ -22,7 +22,7 @@ title: "The Little PHPer - 7. Friends and Relations"
                 Scheme
             </th>
             <th>
-                PHP
+                PHP <span class="sc-ref">[<a href="https://github.com/whitephp/the-little-phper/blob/master/src/chapter_7.php" target="_whitephp-ref">Source Code</a>]</span>
             </th>
         </tr>
     </thead>

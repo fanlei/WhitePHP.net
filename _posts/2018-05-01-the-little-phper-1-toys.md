@@ -10,7 +10,7 @@ title: "The Little PHPer - 1. Toys"
                 Scheme
             </th>
             <th>
-                PHP
+                PHP <span class="sc-ref">[<a href="https://github.com/whitephp/the-little-phper/blob/master/src/chapter_1.php" target="_whitephp-ref">Source Code</a>]</span>
             </th>
         </tr>
     </thead>

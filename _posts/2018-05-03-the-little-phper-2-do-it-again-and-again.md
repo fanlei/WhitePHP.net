@@ -8,6 +8,7 @@ title: "The Little PHPer - 2. Do It, Do It Again, and Again, and Again..."
     font-size: 29px;   
 }
 </style>
+
 <table>
     <thead>
         <tr>
@@ -15,7 +16,7 @@ title: "The Little PHPer - 2. Do It, Do It Again, and Again, and Again..."
                 Scheme
             </th>
             <th>
-                PHP
+                PHP <span class="sc-ref">[<a href="https://github.com/whitephp/the-little-phper/blob/master/src/chapter_2.php" target="_whitephp-ref">Source Code</a>]</span>
             </th>
         </tr>
     </thead>

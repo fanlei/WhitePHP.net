@@ -19,7 +19,7 @@ title: "The Little PHPer - 4. Numbers Games"
                 Scheme
             </th>
             <th>
-                PHP
+                PHP <span class="sc-ref">[<a href="https://github.com/whitephp/the-little-phper/blob/master/src/chapter_4.php" target="_whitephp-ref">Source Code</a>]</span>
             </th>
         </tr>
     </thead>

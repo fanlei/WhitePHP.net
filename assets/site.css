@@ -54,3 +54,8 @@ td.primitive {
 td.primitive > code {
     font-weight: bold;
 }
+
+.sc-ref {
+    font-weight: normal;
+    float: right;
+}
