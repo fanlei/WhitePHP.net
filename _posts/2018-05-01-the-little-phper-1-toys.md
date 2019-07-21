@@ -3,16 +3,6 @@ layout: post
 title: "The Little PHPer - 1. Toys"
 ---
 
-<style>
-.wrapper {
-    max-width: 801px;   
-}
-
-tr td {
-    vertical-align: middle;   
-}
-</style>
-
 <table>
     <thead>
         <tr>
@@ -35,41 +25,27 @@ tr td {
         </tr>
         <tr>
             <td>
-                <code>
-                atom
-                </code><br />
-                <code>
-                (quote atom)
-                </code>
+                <code>atom</code><br />
+                <code>(quote atom)</code>
             </td>
             <td>
-                <code>
-                'atom'
-                </code>
+                <code>'atom'</code>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                1492
-                </code>
+                <code>1492</code>
             </td>
             <td>
-                <code>
-                1492
-                </code>
+                <code>1492</code>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                *abc$
-                </code>
+                <code>*abc$</code>
             </td>
             <td>
-                <code>
-                '*abc$'
-                </code>
+                <code>'*abc$'</code>
             </td>
         </tr>
         <tr>
@@ -82,84 +58,56 @@ tr td {
         </tr>
         <tr>
             <td>
-                <code>
-                (atom)
-                </code><br />
-                <code>
-                (quote (atom))
-                </code>
+                <code>(atom)</code><br />
+                <code>(quote (atom))</code>
             </td>
             <td>
-                <code>
-                ['atom']
-                </code>
+                <code>['atom']</code>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                (atom turkey or)
-                </code>
+                <code>(atom turkey or)</code>
             </td>
             <td>
-                <code>
-                ['atom', 'turkey', 'or']
-                </code>
+                <code>['atom', 'turkey', 'or']</code>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                ((atom, turkey) or)
-                </code>
+                <code>((atom, turkey) or)</code>
             </td>
             <td>
-                <code>
-                [['atom', 'turkey'], 'or']
-                </code>
+                <code>[['atom', 'turkey'], 'or']</code>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                (((how) are) ((you) (doing so)) far)
-                </code>
+                <code>(((how) are) ((you) (doing so)) far)</code>
             </td>
             <td>
-                <code>
-                [[['how'], 'are'] [['you'], ['doing', 'so']], 'far']
-                </code>
+                <code>[[['how'], 'are'] [['you'], ['doing', 'so']], 'far']</code>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                ()
-                </code>
+                <code>()</code>
             </td>
             <td>
-                <code>
-                []
-                </code>
+                <code>[]</code>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                (() () ())
-                </code>
+                <code>(() () ())</code>
             </td>
             <td>
-                <code>
-                [[], [], []]
-                </code>
+                <code>[[], [], []]</code>
             </td>
         </tr>
         <tr>
-            <td>
-                <code><strong>
-                car
-                </strong></code>
+            <td class="primitive">
+                <code>car</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -172,10 +120,8 @@ function car
             </td>
         </tr>
         <tr>
-            <td>
-                <code><strong>
-                cdr</strong></code> 
-                <sup><a href="#car-and-cdr">[4]</a></sup>
+            <td class="primitive">
+                <code>cdr</code> <sup><a href="#car-and-cdr">[4]</a></sup>
             </td>
             <td>
             {%- highlight php -%}
@@ -188,10 +134,8 @@ function cdr
             </td>
         </tr>
         <tr>
-            <td>
-                <code><strong>
-                cons
-                </strong></code>
+            <td class="primitive">
+                <code>cons</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -204,10 +148,8 @@ function cons
             </td>
         </tr>
         <tr>
-            <td>
-                <code><strong>
-                null?
-                </strong></code>
+            <td class="primitive">
+                <code>null?</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -220,10 +162,8 @@ function is_nulll
             </td>
         </tr>
         <tr>
-            <td>
-                <code><strong>
-                atom?
-                </strong></code>
+            <td class="primitive">
+                <code>atom?</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -236,8 +176,8 @@ function is_atom
             </td>
         </tr>
         <tr>
-            <td>
-                <code><strong>eq?</strong></code>
+            <td class="primitive">
+                <code>eq?</code>
             </td>
             <td>
             {%- highlight php -%}

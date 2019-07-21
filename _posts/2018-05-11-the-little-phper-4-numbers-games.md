@@ -3,6 +3,15 @@ layout: post
 title: "The Little PHPer - 4. Numbers Games"
 ---
 
+<ul>
+<li>
+<i>numbers</i>: consider only nonnegative integers.
+</li>
+<li>
+<i>tup</i>: a list of numbers, could be empty.
+</li>
+</ul>
+
 <table>
     <thead>
         <tr>
@@ -16,10 +25,8 @@ title: "The Little PHPer - 4. Numbers Games"
     </thead>
     <tbody>
         <tr>
-            <td>
-            <code><strong>
-            add1
-            </strong></code>
+            <td class="primitive">
+            <code>add1</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -32,10 +39,8 @@ function add1
             </td>
         </tr>
         <tr>
-            <td>
-            <code><strong>
-            sub1
-            </strong></code>
+            <td class="primitive">
+            <code>sub1</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -48,10 +53,8 @@ function sub1
             </td>
         </tr>
         <tr>
-            <td>
-            <code><strong>
-            zero?
-            </strong></code>
+            <td class="primitive">
+            <code>zero?</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -65,9 +68,7 @@ function is_zero
         </tr>
         <tr>
             <td>
-            <code>
-            &plus;
-            </code>
+            <code>&plus;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -82,9 +83,7 @@ function plus
         </tr>
         <tr>
             <td>
-            <code>
-            &minus;
-            </code>
+            <code>&minus;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -99,9 +98,7 @@ function minus
         </tr>
         <tr>
             <td>
-            <code>
-            addtup
-            </code>
+            <code>addtup</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -116,9 +113,7 @@ function addtup
         </tr>
         <tr>
             <td>
-            <code>
-            &times;
-            </code>
+            <code>&times;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -133,9 +128,7 @@ function x
         </tr>
         <tr>
             <td>
-            <code>
-            tup&plus;
-            </code>
+            <code>tup&plus;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -152,9 +145,7 @@ function tupplus
         </tr>
         <tr>
             <td>
-            <code>
-            &gt;
-            </code>
+            <code>&gt;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -169,9 +160,7 @@ function gt
         </tr>
         <tr>
             <td>
-            <code>
-            &lt; 
-            </code>
+            <code>&lt;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -186,9 +175,7 @@ function lt
         </tr>
         <tr>
             <td>
-            <code>
-            &equals;
-            </code>
+            <code>&equals;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -204,9 +191,7 @@ function is_eqn
         </tr>
         <tr>
             <td>
-            <code>
-            &uarr;
-            </code>
+            <code>&uarr;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -221,9 +206,7 @@ function power
         </tr>
         <tr>
             <td>
-            <code>
-            &div;
-            </code>
+            <code>&div;</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -239,9 +222,7 @@ function division
         </tr>
         <tr>
             <td>
-            <code>
-            length
-            </code>
+            <code>length</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -256,9 +237,7 @@ function length
         </tr>
         <tr>
             <td>
-            <code>
-            pick
-            </code>
+            <code>pick</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -274,9 +253,7 @@ function pick
         </tr>
         <tr>
             <td>
-            <code>
-            rempick
-            </code>
+            <code>rempick</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -292,10 +269,8 @@ function rempick
             </td>
         </tr>
         <tr>
-            <td>
-            <code><strong>
-            number?
-            </strong></code>
+            <td class="primitive">
+            <code>number?</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -309,9 +284,7 @@ function is_number
         </tr>
         <tr>
             <td>
-            <code>
-            no-nums
-            </code>
+            <code>no-nums</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -327,9 +300,7 @@ function no_nums
         </tr>
         <tr>
             <td>
-            <code>
-            all-nums
-            </code>
+            <code>all-nums</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -345,9 +316,7 @@ function all_nums
         </tr>
         <tr>
             <td>
-            <code>
-            eqan?
-            </code>
+            <code>eqan?</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -363,9 +332,7 @@ function is_eqan
         </tr>
         <tr>
             <td>
-            <code>
-            occur
-            </code>
+            <code>occur</code>
             </td>
             <td>
             {%- highlight php -%}
@@ -381,9 +348,7 @@ function occur
         </tr>
         <tr>
             <td>
-            <code>
-            one?
-            </code>
+            <code>one?</code>
             </td>
             <td>
             {%- highlight php -%}

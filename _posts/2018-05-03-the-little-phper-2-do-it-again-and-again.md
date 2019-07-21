@@ -31,12 +31,12 @@ title: "The Little PHPer - 2. Do It, Do It Again, and Again, and Again..."
             </td>
             <td>
                 <pre>
-function foo        |       $foo = function
-($a, $b, $c)        |       ($a, $b, $c) use (&$foo)
-{return             |       {return
-    body;           |           body;
-}                   |       };</pre>
-                <div class="sup-block"><sup><a href="#php-function">[1]</a>,</sup> <sup><a href="#php-lambda">[2]</a></sup></div>
+function foo      |     $foo = function
+($a, $b, $c)      |     ($a, $b, $c) use (&$foo)
+{return           |     {return
+    body;         |         body;
+}                 |     };</pre>
+                <sup><a href="#php-function">[1]</a>,</sup> <sup><a href="#php-lambda">[2]</a></sup>
             </td>
         </tr>
         <tr>
@@ -49,45 +49,33 @@ function foo        |       $foo = function
   (else en))</pre>
             </td>
             <td>
-            <br />
                 <pre>
+
 p1 ? e1 
 : (p2 ? e2
   ...
   : en);</pre>
-                <div class="sup-block"><sup><a href="#php-ternary">[3]</a></sup></div>
+                <sup><a href="#php-ternary">[3]</a></sup>
+            </td>
+        </tr>
+        <tr>
+            <td class="primitive">
+                <code>#t</code> <br />
+                <code>#f</code>
+            </td>
+            <td class="primitive">
+                <code>TRUE</code> <br />
+                <code>FALSE</code> <sup><a href="#php-boolean">[4]</a></sup>
             </td>
         </tr>
         <tr>
             <td>
-                <code>
-                    #t
-                </code>
+                <code>(<b>or</b> ...)</code> <br />
+                <code>(<b>and</b> ...)</code>
             </td>
             <td>
-                <code>TRUE</code> <sup><a href="#php-boolean">[4]</a></sup>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>
-                    #f
-                </code>
-            </td>
-            <td>
-                <code>
-                    FALSE
-                </code>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <code>
-                (or ...)
-                </code>
-            </td>
-            <td>
-                <code>... or ...</code> 
+                <code>... <b>or</b> ...</code> <br />
+                <code>... <b>and</b> ...</code> 
                 <sup><a href="#php-logical">[5]</a></sup>
             </td>
         </tr>
