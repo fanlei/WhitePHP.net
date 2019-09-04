@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-It's a white elephant.
+<a href="mailto:self@whitephp.net">self@whitephp.net</a>
