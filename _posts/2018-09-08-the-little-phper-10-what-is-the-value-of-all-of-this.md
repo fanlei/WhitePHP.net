@@ -9,6 +9,13 @@ title: "The Little PHPer - 10. What Is the Value of All of This?"
 }
 </style>
 
+<h3>The whole picture: </h3>
+<p>
+<a href="/assets/value_activity.svg" title="Click to zoom in">
+<img src="/assets/value_activity.svg" alt="Activity diagram of the interpreter: value" title="Activity diagram of the interpreter" />
+</a>
+</p>
+
 <ul>
 <li>
 <i>entry</i>: a pair of lists whose first list is a set, and also the two lists must be of equal length.
