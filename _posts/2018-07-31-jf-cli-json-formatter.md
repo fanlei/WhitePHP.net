@@ -57,10 +57,16 @@ The JSON data after formatted would be like:
 }
 {%- endhighlight -%}
 
-It's possilbe to remove all the whitespaces by passing `0` as the 2nd parameter like:
+It's possible to reverse the behavior, say, remove all the white-spaces by passing `0` as the 2nd parameter like:
 
 {%- highlight shell -%}
-$ jf data.json 0
+$ jf data_formatted.json 0
+{%- endhighlight -%}
+
+Or,
+
+{%- highlight shell -%}
+$ jf data_formatted.json 0 > data.json
 {%- endhighlight -%}
 
 More options depend on the <a href="https://www.php.net/manual/en/json.constants.php" target="_whitephp-ref">JSON constants</a> provided.
@@ -73,7 +79,7 @@ Format current file:
 :%!jf %
 {%- endhighlight -%}
 
-or add a keymap in `vimrc`:
+Or add a keymap in `vimrc`:
 
 {%- highlight viml -%}
 nnoremap <Leader>jf :%!jf %<CR>
