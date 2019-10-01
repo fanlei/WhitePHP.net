@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "jf: CLI JSON Formatter"
+title: "jf: JSON Formatter in CLI"
 ---
 
 It's easy to write a CLI tool of JSON Formatter by PHP, since a new <a href="https://www.php.net/manual/en/json.constants.php" target="_whitephp-ref">JSON constant</a> **JSON_PRETTY_PRINT** is available as of PHP 5.4.0. Essential implementation looks like:
